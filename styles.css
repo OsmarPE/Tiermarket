@@ -1,0 +1,134 @@
+:root{
+    --bg-body:#111111;
+    --bg-card:#1F1F1F;
+    --color-red-100:#FF7F80;
+    --color-orange-100:#FFC07F;
+    --color-yellow-100:#FFDF80;
+    --color-yellow-200:#FDFF7F;
+    --color-green-100:#BFFF7F;
+    --color-green-200:#7FFF7F;
+}
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-body);
+    font-family: 'Outfit';
+}
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+a{
+    display: inline-block;
+    color: white;
+}
+
+button,label{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    background-color: var(--bg-card);
+    color: white;
+    width: 1.75rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+
+}
+
+button:hover,label:hover{
+    background-color: #272727;
+}
+
+
+header{
+    padding: 2rem 0;
+}
+header a{
+    display: block;
+    max-width: 130px;
+    margin: 0 auto;
+}
+
+main{
+    max-width: 440px;
+    margin: 0 auto;
+}
+svg{
+    width: 20px;
+}
+.card{
+    background-color: var(--bg-card);
+    border: 1px solid #343434;
+}
+.card-row{
+    border-bottom: 1px solid var(--bg-body);
+    display: grid;
+    grid-template-columns: auto 1fr;
+  
+}
+.images img,.card-item,.card-item-body img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.images img,.card-item-body img{
+    cursor: grabbing;
+}
+.card-item{
+    font-weight: 600;
+    display:grid;
+    place-items: center;
+}
+
+
+
+.card-item-red{
+    background-color: var(--color-red-100);
+}
+.card-item-orange{
+    background-color: var(--color-orange-100);
+}
+.card-item-yellow-100{
+    background-color: var(--color-yellow-100);
+}
+.card-item-yellow-200{
+    background-color: var(--color-yellow-200);
+}
+.card-item-green-100{
+    background-color: var(--color-green-100);
+}
+.card-item-green-200{
+    background-color: var(--color-green-200);
+}
+
+.card-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1rem auto;
+}
+.images{
+    border: 1px solid  #343434;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+
+.card-item-body{
+    transition:  background-color 0.4s ease;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-item-body.hover{
+    background-color: #656565;
+}
